@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>TMWebRock Login </title>
+<style>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+</style>
+<script src='jquery/jquery.js'></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+<script src='js/Student.js'></script>
+</head>
+<body>
+<h1>Student Add Form</h1>
+RollNumber<input type='text' id='rollNumber' name='rollNumber'><br>
+Name &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<input type='text' id='name' name='name'><br>
+Gender &nbsp; &nbsp; &nbsp;<input type='text' id='gender' name='gender'><br><br>
+<button type='button' id='button1' onclick='addStudent()'>Add</button>&nbsp;&nbsp;
+<button type='button' id='button2' onclick='updateStudent()'>Update</button>&nbsp;&nbsp;
+<button type='button' id='button3' onclick='deleteStudent()'>Delete</button>&nbsp;&nbsp;
+<button type='button' id='button4'>GetByRollNumber</button>&nbsp;&nbsp;
+<button type='button' id='button5' onclick='getStudents()'>GetAll</button>
+<br><br>
+<div style="width:400px;border:1px solid black;padding:5px">
+<table id="dataTable" class="display nowrap" style="width:50%">
+<thead>
+<tr>
+<th>RollNumber</th>
+<th>Name</th>
+<th>Gender</th>
+</tr>
+</thead>
+</table>
+
+</body>
+</html>
